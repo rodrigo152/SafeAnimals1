@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+:root {
+    --main-color: #ff6c01;
+    --secondary-color: #020202;
+    --tertiary-color: #202429;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.none {
+    display: none;
+}
+
+/*Inicio Banner*/
+.container-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 96vh;
+    align-items: center;
+    position: relative;
+    top: 3em;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+}
+
+.nave-img {
+    width: 75%;
+    background-color: #181433;
+}
+
+.banner-info {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: black;
+}
+
+.banner-info h1 {
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.banner-info p {
+    font-weight: bolder;
+    font-size: 1.4em;
+    margin-bottom: 1.5em;
+}
+
+.banner-info h2 {
+    background-color: var(--main-color);
+    font-size: 1.4em;
+    display: inline-block;
+    color: white;
+    padding: 3em 1em 3em 1em;
+    border-radius: 50%;
+}
+/*Fin de banner*/
+
+
+/* Segunda parte */
+.section1 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 4em 0;
+}
+
+h1 {
+    font-size: 2.8em;
+    font-weight: bolder;
+}
+
+.flex-img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-img img {
+    width: 30%;
+}
+
+.secondary-text {
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: justify;
+}
+/* Fin Segunda parte */
+
+
+/* 3ra parte */
+.section3 {
+    background-color: #ffb27a;
+    padding: 6em 0;
+    margin-bottom: 6em;
+}
+
+.flex-card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flex-card .card {
+    padding: 1.5em;
+    border: none;
+    width: 25rem !important;
+    border-radius: 15px;
+    margin: 2em;
+}
+
+.img3 {
+    width: 40%;
+    margin-bottom: 1rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+/* Fin 3ra aprte */
+
+/* 4ta parte */
+div.infografia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infografia img,
+.infografia div {
+    width: 40%;
+    margin: 2em;
+    text-align: justify;
+}
+
+.infografia img {
+    border-radius: 20px;
+}
+
+.infografia h2 {
+    font-size: 2em;
+    margin-bottom: 1.1em;
+}
+/* Fin 4ta parte */
+
+
+/* 5ta parte */
+.member {
+    margin: 8em 0 6em;
+    width: 100%;
+    background-color: var(--main-color);
+    display: flex;
+    border-radius: 20px;
+    display: inline-block;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 5em;
+}
+
+.zorro {
+    width: 20%;
+    right: 0;
+    display: inline-block;
+}
+
+.member h1 {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: .5em;
+}
+
+.member a {
+    text-decoration: none;
+    color: white;
+    padding: 1.3em 2.5em;
+    border-radius: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #FF7F5C;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+
+}
+
+.flex-row img {
+    height: 12em;
+    margin: 1em 5em;
+}
+
+
+
+
+
+
+
+
+
+/* Responsive */
+
+@media screen and (max-width:1201px) {
+
+    .container-banner {
+        flex-direction: column-reverse;
+        justify-content: center;
+        top: 4em;
+        margin-bottom: 0;
+    }
+
+    .nave-img {
+        width: 90%;
+    }
+
+    .banner-info h1 {
+        font-size: 2em;
+    }
+
+    .banner-info h2 {
+        display: none;
+    }
+
+    .banner-info p {
+        font-size: 1.7em;
+        margin-bottom: 1.8em;
+    }
+
+    .banner-info p::after {
+        content: " MALTRATO ANIMAL!";
+        color: var(--main-color);
+    }
+
+    .section1 h1,
+    .section3 h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .section3 {
+        padding: 6em 2.5em;
+    }
+
+    .flex-card .card {
+        margin: 1.2em;
+        padding: 1em;
+    }
+
+    .img3 {
+        width: 33%;
+        margin-bottom: .8rem;
+    }
+}
+
+
+@media screen and (max-width:1000px) {
+    .infografia {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .infografia img {
+        width: 50%;
+    }
+
+    .infografia div {
+        width: 80%;
+        margin: 1em;
+    }
+
+    .infografia h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .none {
+        display: block;
+    }
+
+    .member h1 {
+        font-size: 2em;
+        margin-bottom: .9em;
+    }
+
+    .member a {
+        font-size: .8em;
+    }
+}
+
+
+@media screen and (max-width:750px) {
+    .member {
+        display: block;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+:root {
+    --main-color: #ff6c01;
+    --secondary-color: #020202;
+    --tertiary-color: #202429;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+/* INICIO DE MENÚ */
+#header {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .logo {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.menu .logo img {
+    height: 60px;
+    vertical-align: top;
+    padding: 4px;
+}
+
+.menu .btn-menu {
+    display: none;
+}
+
+.menu .enlaces,
+.menu .redes-sociales {
+    display: inline-block;
+    text-align: right;
+}
+
+.menu .enlaces a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.1rem;
+    font-size: 1.1em;
+    color: #000;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.redes-sociales i {
+    padding: .4em;
+    color: #000;
+    font-size: 1.3em;
+}
+
+.enlaces .btn {
+    background: var(--main-color) !important;
+    border: none;
+    height: fit-content;
+    color: #000;
+    font-weight: bolder;
+}
+
+.menu .enlaces a:hover {
+    color: var(--color-primario);
+}
+
+.headroom {
+    transition: transform .3s ease;
+}
+
+.headroom--pined {
+    transform: translateY(0%);
+}
+
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+/* PROPIEDADES PARA DISPOSITIVOS MÓVILES */
+@media screen and (max-width:1402px) {
+
+    header .menu .redes-sociales a {
+        display: none;
+    }
+
+    .menu .enlaces a {
+        padding: .7rem;
+    }
+}
+
+@media screen and (max-width:1134px) {
+
+    header .menu {
+        flex-direction: column;
+    }
+
+    header .menu .logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: .4em;
+        width: 100%;
+    }
+
+    header .menu .logo .btn-menu {
+        display: inline-block;
+        color: var(--tertiary-color);
+        font-size: 2em;
+        margin-top: 20px;
+    }
+
+    header .menu .enlaces {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+/* FIN PROPIEDADES PARA DISPOSITIVOS MÓVILES */
+/* FIN DE MENÚ */
+
+
+/* Footer */
+footer{
+    -webkit-box-shadow: -1px -5px 7px -4px rgba(49, 47, 47, 0.69); 
+    box-shadow: -1px -5px 7px -4px rgba(49, 48, 48, 0.69);
+    padding: .8em;
+    margin-top: 6rem;
+}
+footer h6, footer p, .copy-right{
+    color: #181433;
+    text-align: center;
+}
+/* Fin Footer */

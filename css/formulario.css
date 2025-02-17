@@ -1,0 +1,193 @@
+:root {
+    --color-dark: #15181f;
+    --color-dark-x: #2d343f;
+    --color-dark-xx: #1f232b;
+    --color-light: #ffffff;
+    --color-grey: #f5f6f8;
+}
+body{
+    
+    background-size: cover;
+    
+    display: block;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+ .conteiner1{ 
+    margin: 4.5em;
+    position: relative;
+    padding: 4em 5em;
+    
+    
+}
+.container-form1{
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    border: none;
+    padding: 2em ;
+    box-shadow: 0 0 6px rgb(0, 0, 0);  
+}
+.container{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    border: none;
+    padding: 2em ;
+    box-shadow: 0 0 6px rgb(0, 0, 0);  
+}
+.container0{ 
+    position: relative;
+    width: 80%;
+    margin-left: 9.7em;
+    border-width:2px;
+    border-style:groove;
+    border-color:rgb(5, 5, 5);
+    padding-bottom: 5em;
+    
+}
+.conteiner2{
+    position: relative;
+    
+    margin-left: 5em;
+    text-align: center;  
+}
+
+
+
+/*banner*/
+
+
+
+/*titulo2-f*/
+.nave-subtexto2{
+    
+    font-size: 2.3em;
+    font-family:'Bebas Neue', cursive;
+    text-transform: uppercase;
+}
+/*titulo1-f*/
+.nave-conte-texto{
+    position: relative;
+    font-size: 1.5em;
+    font-family:'Bebas Neue', cursive;
+    text-transform: uppercase;
+    
+}
+/*form*/
+.nave--form1{
+    position: relative;
+    font-size: 2.5em;
+    height: 70px;
+    width:22.5em;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    background-color:#ce6114;
+    text-align: center; 
+    
+}
+
+.nave--form2{
+    position: relative;
+    font-size: 2.5em;
+    height: 70px;
+    width:22.5em;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    background-color:#ce6114;
+    margin-top: 1em;
+    text-align: center; 
+    
+}
+.form-control {
+    background-color:#e0e5e9;
+    border: 2px solid #c2761e;
+    border-radius: .2rem;
+    padding: 1.5rem 1rem;
+}
+.formulario__label {
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: auto;
+}
+.formulario__btn{
+	position: relative;
+    background-color:#d8711c;
+    border: 1px solid #d8711c;
+    border-radius: .6rem;
+    padding: 1rem 10rem;
+}
+/* fin_form_estilos */
+/*Diseño de linea*/
+hr{
+    background-color:#5a544f;
+    width: 18em;
+    
+}
+.btn_le{
+    text-align:center;
+    font-size: 1.5em;
+    
+}
+
+.bt1{
+    background-color: #c97938fa;
+    color: rgb(8, 8, 8);
+    padding: 1em;
+    border: none;
+    font-size: 1.4em;
+    font-weight: bold;
+    border-radius: .5em;
+    width: 45%;
+    margin-top: 1.5em;
+}
+
+
+.card-title{
+    font-size: 2em;
+    text-decoration: none;
+    background-color: #c97938fa;
+    text-transform: uppercase;
+    padding: 1em;
+    border-radius: .4em;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+.bt2{
+    background-color: rgb(233, 118, 24);
+    color: #FFF;
+    padding: 1em;
+    border: none;
+    font-size: 1.2em;
+    margin-top: 2em;
+    width: 100%;
+}
+.bt2:hover{
+    background-color: rgb(249, 169, 95);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+label{
+    display: block;
+    margin-top: 0.9em;
+
+}
+.contenido{
+    padding: 1.5em;
+    border-radius: .3em;
+    border: 2px solid #d8711c;
+    width: 100%;
+}
+

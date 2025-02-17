@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+:root {
+    --main-color: #ff6c01;
+    --secondary-color: #020202;
+    --tertiary-color: #202429;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.registro {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+}
+input {
+    border: 1px solid var(--main-color) !important;
+}
+
+.text,
+label {
+    font-size: 19px;
+}
+
+label {
+    font-weight: 500;
+}
+
+form {
+    background-color: white;
+    border: 1px solid black;
+    padding: 1.5em 2.8em;
+}
+
+.registrar {
+    font-weight: bold;
+    background-color: rgb(218, 121, 57);
+    color: black;
+    display: block;
+    width: 100%;
+    padding: .5em 0;
+    margin: auto;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 0 0 black;
+}
+
+.registrar:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 black;
+}
+
+
+.registrar:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 black;
+}

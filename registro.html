@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/registro.css">
+    <title>Únete</title>
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/da41e940df.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+</head>
+
+<body>
+    <!-- Inicio Menú -->
+    <header id="header">
+        <nav class="menu">
+            <div class="logo">
+                <a href="#"><img class="img-fluid logos" src="img/Logo.svg" alt="Logo"></a>
+                <a href="#" class="btn-menu" id="btn-menu">
+                    <i class="icono-menu fa fa-bars"></i>
+                </a>
+            </div>
+
+            <div class="enlaces" id="enlaces">
+                <a href="index.html">INICIO</a>
+                <a href="noticias.html">NOTICIAS</a>
+                <a href="adoption.html">ADOPTA</a>
+                <a href="#">QUIENES SOMOS</a>
+                <a href="registro.html">ÚNETE</a>
+                <a href="formulario.html">CONTACTO</a>
+                
+            </div>
+
+            <div class="navbar redes-sociales" id="redes-sociales">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></i></a>
+                <a href="#"><i class="far fa-envelope"></i></a>
+            </div>
+        </nav>
+    </header>
+    <!-- Fin Menú -->
+
+    <div class="registro pt-4">
+        <div class="showcase p-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 pt-5 pr-5">
+                        <h1 class="display-4 pt-5 pb-3 titulo">Sé parte de nuestra comunidad.</h1>
+                        <p class="m-auto pb-4 text">Ayúda a un animalito a ser rescatado. <br> Adoptar una mascota es
+                            más que el hecho de asumir una responsabilidad.<br>Es aprender a querer y a preocuparte por
+                            alguien más.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <form class="p-5 rounded" method="post" id="formRegistro">
+                            <div class="form-group">
+                                <label class="mb-3" for="name">Nombre</label>
+                                <input class="form-control" id="nombre" type="text" placeholder="Enter name">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label class="mb-3" for="name">Correo</label>
+                                <input class="form-control" id="correo" type="email" placeholder="Enter email">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label class="mb-3" for="password">Password</label>
+                                <input class="form-control" id="password" type="password" placeholder="Enter Password">
+                                <br><br>
+                            </div>
+                    
+                            <input type="button" value="Registrar" class="btn registrar" onclick="registroUsuario()">
+                            
+                            <br>
+                            <a class="d-block text-center btn registrar" href="login.html">Inicia sesión</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/validaciones.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script src="js/headroom.min.js"></script>
+    <script src="js/menu-flex.js"></script>
+
+</body>
+
+</html>
